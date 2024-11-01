@@ -195,42 +195,9 @@ will want to use the `opentelemetry-sdk` module which contains our standard impl
 of the APIs.
 
 ## Gradle composite builds
+aaaaafffcccc
 
-For opentelemetry-java developers that need to test the latest source code with another
-project, composite builds can be used as an alternative to `publishToMavenLocal`. This
-requires some setup which is explained [here](CONTRIBUTING.md#composing-builds).
-
-## Releases
-
-See the [VERSIONING.md](VERSIONING.md) document for our policies for releases and compatibility
-guarantees.
-
-Check out information about the [latest release](https://github.com/open-telemetry/opentelemetry-java/releases).
-
-See the project [milestones](https://github.com/open-telemetry/opentelemetry-java/milestones)
-for details on upcoming releases. The dates and features described in issues
-and milestones are estimates, and subject to change.
-
-The following tables describe the artifacts published by this project. To take a dependency, follow
-the instructions in [Published Released](#published-releases) to include the BOM, and specify the
-dependency as follows, replacing `{{artifact-id}}` with the value from the "Artifact ID" column:
-
-```xml
-<dependency>
-  <groupId>io.opentelemetry</groupId>
-  <artifactId>{{artifact-id}}</artifactId>
-</dependency>
-```
-
-```groovy
-  implementation('io.opentelemetry:{{artifact-id}}')
-```
-
-### Bill of Material
-
-| Component                                    | Description                            | Artifact ID               | Version                                                     | Javadoc |
-|----------------------------------------------|----------------------------------------|---------------------------|-------------------------------------------------------------|---------|
-| [Bill of Materials (BOM)](./bom)             | Bill of materials for stable artifacts | `opentelemetry-bom`       | <!--VERSION_STABLE-->1.43.0<!--/VERSION_STABLE-->           | N/A     |
+<!--VERSION_STABLE-->1.43.0<!--/VERSION_STABLE-->           | N/A     |
 | [Alpha Bill of Materials (BOM)](./bom-alpha) | Bill of materials for alpha artifacts  | `opentelemetry-bom-alpha` | <!--VERSION_UNSTABLE-->1.43.0-alpha<!--/VERSION_UNSTABLE--> | N/A     |
 
 ### API
